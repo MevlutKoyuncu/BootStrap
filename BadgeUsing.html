@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>BootStrap Badge</title>
+        <link href="bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-3">
+            <h2>Badge Kullanımı <span class="badge bg-success"> Yeni Konu</span></h2>
+            <label clasS="badge bg-primary">Primary Badge</label>
+            <label clasS="badge bg-success">Success Badge</label>
+            <label clasS="badge bg-secondary">Secondary Badge</label>
+            <label clasS="badge bg-info">Info Badge</label>
+            <label clasS="badge bg-warning">Warning Badge</label>
+            <label clasS="badge bg-danger">Danger Badge</label>
+            <label clasS="badge bg-dark">Dark Badge</label>
+            <label clasS="badge bg-light">Light Badge</label>
+        </div>
+        <div class="container mt-3">
+            <label clasS="badge bg-primary rounded-pill">Primary Badge</label>
+            <label clasS="badge bg-success rounded-pill">Success Badge</label>
+            <label clasS="badge bg-secondary rounded-pill">Secondary Badge</label>
+            <label clasS="badge bg-info rounded-pill">Info Badge</label>
+            <label clasS="badge bg-warning rounded-pill">Warning Badge</label>
+            <label clasS="badge bg-danger rounded-pill">Danger Badge</label>
+            <label clasS="badge bg-dark rounded-pill">Dark Badge</label>
+            <label clasS="badge bg-light rounded-pill">Light Badge</label>
+        </div>
+        <div class="container mt-3">
+            <div class="row">
+                <div class="col-12">
+                    <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Isim</th>
+                        <th>Soyisim</th>
+                        <th>Telefon</th>
+                        <th>Durum</th>
+                        <th>Admin</th>
+                        <th>Seçenekler</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Murtaza</td>
+                        <td>Şuayipoğlu</td>
+                        <td>530 XXX XX XX</td>
+                        <td><label class="badge bg-success">Aktif</label></td>
+                        <td></td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-secondary" data-bs-toggle="tooltip" title="Görüntüle"><i class="fa-solid fa-eye text-white"></i></a>
+                                <a href="#" class="btn btn-primary"data-bs-toggle="tooltip" title="Düzenle"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                <a href="#" class="btn btn-danger"data-bs-toggle="tooltip" title="Sil"><i class="fa-solid fa-trash text-white"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Hede</td>
+                        <td>Hüde</td>
+                        <td>530 XXX XX XX</td>
+                        <td><label class="badge bg-secondary">Askıya alınmış</label></td>
+                        <td></td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-eye text-white"></i></a>
+                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash text-white"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Bla</td>
+                        <td>Bla</td>
+                        <td>530 XXX XX XX</td>
+                        <td><label class="badge bg-success">Aktif</label></td>
+                        <td><label class="badge rounded-pill bg-warning"><i class="fa-regular fa-star"></i><label></td>
+                        <td>
+                            <div class="btn-group btn-group-sm">
+                                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-eye text-white"></i></a>
+                                <a href="#" class="btn btn-primary"><i class="fa-solid fa-pen-to-square text-white"></i></a>
+                                <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash text-white"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-3">
+            <a href="#" class="btn btn-primary">Siparişler <span class="badge bg-danger">3</span></a>
+        </div>
+        <script>document.addEventListener("DOMContentLoaded", function() {
+                    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+                    var tooltipList = tooltipTriggerList.map(function(tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl);
+                        });
+                        });
+</script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
