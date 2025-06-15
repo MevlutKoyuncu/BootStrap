@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Responsive Visibility</title>
+        <link href="bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="bg-primary text-white d-inline p-2 m-2"> Div 1</div>
+                    <div class="bg-secondary text-white d-inline p-2 m-2"> Div 2</div>
+                </div>
+                <div class="col-md-4">
+                    <span class="bg-primary text-white d-block p-2 m-2"> Div 1</span>
+                    <span class="bg-secondary text-white d-block p-2 m-2"> Div 2</span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Her Zaman Gizli</th>
+                        <th >Sadece XS</th>
+                        <th >Sadece SM</th>
+                        <th>XXL Gizli</th>
+                        <th>Yazdırırken Yok et</th>
+                        <th>Sadece SM'de göster</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>
+                        <span class="bg-primaryd-none"></span>
+                    </td>
+                    <td class="d-none d-sm-block">
+                        <span class="bg-primary d-none d-sm-block">d-sm-block</span>
+                    </td>
+                    <td>
+                        <span class="bg-primary d-sm-none d-md-block">d-sm-none d-md-block</span>
+                    </td>
+                    <td>
+                        <span class="bg-primary d-xxl-none">d-xxl-none</span>
+                    </td>
+                    <td>
+                        <span class="bg-primary text-white d-print-none">Ben Burdayım</span>
+                    </td>
+                    <td>
+                        <span class="bg-primary text-white d-none d-sm-block d-md-none">d-none d-sm-block d-md-none</span>
+                    </td>
+                </tbody>
+            </table>
+        </div>
+        <script src="bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+        <script src="bootstrap-5.3.6-dist/js/bootstrap.min.bundle.js"></script>
+    </body>
+</html>
